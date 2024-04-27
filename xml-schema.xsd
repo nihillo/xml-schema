@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición de elementos reutilizables -->
+  <xs:element name="alternateLocation" type="xs:string"/>
+  <xs:element name="industryCode" type="xs:string"/>
+  <xs:element name="jobFunction" type="xs:string"/>
+  <xs:element name="skill" type="xs:string"/>
+  <xs:element name="amount" type="xs:integer"/>
+  <xs:element name="currencyCode" type="xs:string"/>
+
+  <!-- Elemento raíz -->
+  <xs:element name="source">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="lastBuildDate" type="xs:string"/>
+        <xs:element name="publisherUrl" type="xs:anyURI"/>
+        <xs:element name="publisher" type="xs:string"/>
+        <xs:element name="expectedJobCount">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="0"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="job" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="partnerJobId" type="xs:string"/>
+              <xs:element name="company" type="xs:string"/>
+              <xs:element name="title" type="xs:string"/>
+              <xs:element name="description" type="xs:string"/>
+              <xs:element name="industry" type="xs:string"/>
+              <xs:element name="applyUrl" type="xs:anyURI"/>
+              <xs:element name="companyId" type="xs:string"/>
+              <xs:element name="location" type="xs:string"/>
+              <xs:element name="alternateLocations" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="alternateLocation" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="city" type="xs:string"/>
+              <xs:element name="state" type="xs:string"/>
+              <xs:element name="country" type="xs:string"/>
+              <xs:element name="postalCode" type="xs:string"/>
+              <xs:element name="industryCodes" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="industryCode" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="jobFunctions" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="jobFunction" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="experienceLevel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="ENTRY_LEVEL"/>
+                    <xs:enumeration value="MID_SENIOR_LEVEL"/>
+                    <xs:enumeration value="EXECUTIVE"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jobtype">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="FULL_TIME"/>
+                    <xs:enumeration value="PART_TIME"/>
+                    <xs:enumeration value="CONTRACT"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="skills" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="skill" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="salaries">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="salary" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="highEnd" type="AmountType"/>
+                          <xs:element name="lowEnd" type="AmountType"/>
+                          <xs:element name="period">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="YEARLY"/>
+								<xs:enumeration value="MONTHLY"/>
+								<xs:enumeration value="SEMIMONTHLY"/>
+							</xs:restriction>
+							</xs:simpleType>
+						  </xs:element>
+						  
+                          <xs:element name="type" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="workplaceTypes" type="xs:string"/>
+              <xs:element name="listDate" type="xs:string"/>
+              <xs:element name="expirationDate" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Definición de tipo de elemento para salario -->
+  <xs:complexType name="AmountType">
+    <xs:sequence>
+      <xs:element name="amount" type="xs:integer"/>
+      <xs:element name="currencyCode" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
