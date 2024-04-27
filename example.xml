@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <source>
-    <lastBuildDate>Thu, 11 Sep 2014 19:39:59 GMT</lastBuildDate>
-    <publisherUrl>[https://www.linkedin.com%3c/publisherUrl%3e]https://www.linkedin.com</publisherUrl>
-    <publisher>LinkedIn</publisher>
-   <expectedJobCount><![CDATA[5596]]></expectedJobCount>
-    <job>
-        <partnerJobId><![CDATA[12345]]></partnerJobId>
-        <company><![CDATA[LinkedIn]]></company>
-        <title><![CDATA[Staff Software Engineer - Applications]]></title>
-        <description><![CDATA[LinkedIn was built to help professionals achieve more in their careers, and every day millions of people use our products to make connections, discover opportunities and gain insights. Our global reach means we get to make a direct impact on the world’s workforce in ways no other company can. ... ]]></description>
-        <industry><![CDATA[Internet,Information Technology and Services]]></industry>
-        <applyUrl><![CDATA[https://www.linkedin.com/jobs/view/1234?trk=linkedin]]></applyUrl>
-        <companyId><![CDATA[xxxx]]></companyId>
-        <location><![CDATA[Sunnyvale, CA, US]]></location>
-        <alternateLocations>
-           <alternateLocation><![CDATA[Mumbai,IN]]></alternateLocation>
-           <alternateLocation><![CDATA[Delhi,IN]]></alternateLocation>
-           <alternateLocation><![CDATA[Bengaluru,IN]]></alternateLocation>
-        </alternateLocations>
-        <city><![CDATA[Sunnyvale]]></city>
-        <state><![CDATA[CA]]></state>
-        <country><![CDATA[US]]></country>
-        <postalCode><![CDATA[94085]]></postalCode>
-        <industryCodes>
-            <industryCode><![CDATA[120]]></industryCode>
-<industryCode><![CDATA[125]]></industryCode>
-        </industryCodes>
-        <jobFunctions>
-            <jobFunction><![CDATA[eng]]></jobFunction>
-            <jobFunction><![CDATA[it]]></jobFunction>
-        </jobFunctions>
-        <experienceLevel><![CDATA[MID_SENIOR_LEVEL]]></experienceLevel>
-        <jobtype><![CDATA[FULL_TIME]]></jobtype>
-        <skills>
-            <skill><![CDATA[Java]]></skill>
-            <skill><![CDATA[Python]]></skill>
-            <skill><![CDATA[Oracle]]></skill>
-            <skill><![CDATA[SQL]]></skill>
-        </skills>
-        <salaries>
-            <salary>
-                <highEnd>
-                    <amount>![CDATA[100000]]</amount>
-                    <currencyCode>USD</currencyCode>
-                </highEnd>
-                <lowEnd>
-                    <amount>![CDATA[50000]]</amount>
-                    <currencyCode>USD</currencyCode>
-                </lowEnd>
-                <period>![CDATA[yearly]]</period>
-                <type>![CDATA[BASE_SALARY]]</type>
-            </salary>
-            <salary>
-                <highEnd>
-                    <amount>![CDATA[50000]]</amount>
-                    <currencyCode>USD</currencyCode>
-                </highEnd>
-                <lowEnd>
-                    <amount>![CDATA[20000]]</amount>
-                    <currencyCode>USD</currencyCode>
-                </lowEnd>
-                <period>![CDATA[yearly]]</period>
-                <type>![CDATA[TOTAL_ADDITIONAL]]</type>
-            </salary>
-        </salaries>
-        <workplaceTypes><![CDATA[On-site]]></workplaceTypes>
-        <listDate><![CDATA[08/28/2023]]></listDate>
-        <expirationDate><![CDATA[09/28/2023]]></expirationDate>
-    </job>
+  <lastBuildDate>Thu, 11 Sep 2014 19:39:59 GMT</lastBuildDate>
+  <publisherUrl>https://www.linkedin.com</publisherUrl>
+  <publisher>LinkedIn</publisher>
+  <expectedJobCount>5596</expectedJobCount>
+  <job>
+    <partnerJobId>12345</partnerJobId>
+    <company>LinkedIn</company>
+    <title>Staff Software Engineer - Applications</title>
+    <description>LinkedIn was built to help professionals achieve more in their careers, and every day millions of people use our products to make connections, discover opportunities and gain insights. Our global reach means we get to make a direct impact on the world�s workforce in ways no other company can.</description>
+    <industry>Internet, Information Technology and Services</industry>
+    <applyUrl>https://www.linkedin.com/jobs/view/1234?trk=linkedin</applyUrl>
+    <companyId>xxxx</companyId>
+    <location>Sunnyvale, CA, US</location>
+    <alternateLocations>
+      <alternateLocation>Mumbai,IN</alternateLocation>
+      <alternateLocation>Delhi,IN</alternateLocation>
+      <alternateLocation>Bengaluru,IN</alternateLocation>
+    </alternateLocations>
+    <city>Sunnyvale</city>
+    <state>CA</state>
+    <country>US</country>
+    <postalCode>94085</postalCode>
+    <industryCodes>
+      <industryCode>120</industryCode>
+      <industryCode>125</industryCode>
+    </industryCodes>
+    <jobFunctions>
+      <jobFunction>eng</jobFunction>
+      <jobFunction>it</jobFunction>
+    </jobFunctions>
+    <experienceLevel>MID_SENIOR_LEVEL</experienceLevel>
+    <jobtype>FULL_TIME</jobtype>
+    <skills>
+      <skill>Java</skill>
+      <skill>Python</skill>
+      <skill>Oracle</skill>
+      <skill>SQL</skill>
+    </skills>
+    <salaries>
+      <salary>
+        <highEnd>
+          <amount>100000</amount>
+          <currencyCode>USD</currencyCode>
+        </highEnd>
+        <lowEnd>
+          <amount>50000</amount>
+          <currencyCode>USD</currencyCode>
+        </lowEnd>
+        <period>YEARLY</period>
+        <type>BASE_SALARY</type>
+      </salary>
+      <salary>
+        <highEnd>
+          <amount>50000</amount>
+          <currencyCode>USD</currencyCode>
+        </highEnd>
+        <lowEnd>
+          <amount>20000</amount>
+          <currencyCode>USD</currencyCode>
+        </lowEnd>
+        <period>YEARLY</period>
+        <type>TOTAL_ADDITIONAL</type>
+      </salary>
+    </salaries>
+    <workplaceTypes>On-site</workplaceTypes>
+    <listDate>08/28/2023</listDate>
+    <expirationDate>09/28/2023</expirationDate>
+  </job>
 </source>
