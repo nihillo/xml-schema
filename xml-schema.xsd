@@ -41,7 +41,6 @@
     </xs:simpleType>
   </xs:element>
   <xs:element name="skill" type="xs:string"/>
-  <xs:element name="amount" type="xs:integer"/>
 
   <!-- Tipos propios -->
   <xs:complexType name="amountType">
