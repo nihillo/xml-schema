@@ -240,10 +240,10 @@
   <xs:element name="source">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="lastBuildDate" type="xs:string"/>
-        <xs:element name="publisherUrl" type="xs:anyURI"/>
-        <xs:element name="publisher" type="xs:string"/>
-        <xs:element name="expectedJobCount">
+        <xs:element name="lastBuildDate" type="xs:string" minOccurs="0"/>
+        <xs:element name="publisherUrl" type="xs:anyURI" minOccurs="0"/>
+        <xs:element name="publisher" type="xs:string" minOccurs="0"/>
+        <xs:element name="expectedJobCount" minOccurs="0">
           <xs:simpleType>
             <xs:restriction base="xs:integer">
               <xs:minInclusive value="0"/>
@@ -536,7 +536,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="postalCode" type="xs:string"/>
+              <xs:element name="postalCode" type="xs:string"  minOccurs="0"/>
               <xs:element name="industryCodes" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
@@ -551,7 +551,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="experienceLevel">
+              <xs:element name="experienceLevel" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:enumeration value="ENTRY_LEVEL"/>
@@ -564,7 +564,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="jobtype">
+              <xs:element name="jobtype" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:enumeration value="FULL_TIME"/>
@@ -582,7 +582,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="salaries">
+              <xs:element name="salaries" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="salary" maxOccurs="unbounded">
@@ -618,7 +618,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="workplaceTypes">
+              <xs:element name="workplaceTypes"  minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:enumeration value="On-site"/>
@@ -627,8 +627,8 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="listDate" type="customDateType"/>
-              <xs:element name="expirationDate" type="customDateType"/>
+              <xs:element name="listDate" type="customDateType"  minOccurs="0"/>
+              <xs:element name="expirationDate" type="customDateType"  minOccurs="0"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
