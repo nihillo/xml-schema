@@ -43,8 +43,6 @@
   <xs:element name="skill" type="xs:string"/>
   <xs:element name="amount" type="xs:integer"/>
 
-  <xs:element name="currencyCode" type="xs:string"/>
-
   <!-- Tipos propios -->
   <xs:complexType name="amountType">
     <xs:sequence>
